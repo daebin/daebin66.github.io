@@ -1,0 +1,101 @@
+<template>
+  <div class = "cust">
+    <ul>
+      <li>
+        <label for="dop">**작성일자</label>
+        <input type="text" id="dop" autofocus
+        placeholder="2023-12-29" required>
+      </li>
+      <li>
+        <label for="name">*고객명</label>
+        <input type="text" id="name" autofocus
+        placeholder="윤○○" required>
+      </li>
+      <li>
+        <label for="resident">*실명번호</label>
+        <input type="text" id="resident" autofocus
+        placeholder="700110-1324561" required>
+      </li>
+      <li>
+        <label for="email">*E-mail</label>
+        <input type="text" id="email" autofocus
+        placeholder="asd@naver.com" required>
+      </li>
+      <li>
+        <label for="number">전화번호</label>
+        <input type="text" id="number" autofocus
+        placeholder="000-0000-0000" required>
+      </li>
+      <li>
+        <label for="phone">*핸드폰번호</label>
+        <input type="text" id="phone" required>
+      </li>
+      <li>
+        <label for="job">*직업</label>
+        <input type="text" id="job" required> 
+      </li>
+      <li>
+        <label for="address">주소</label>
+        <textarea cols="20" rows="3"></textarea>
+      </li>
+      </ul>
+    </div>
+      <hr>
+      <div class="manager">
+        <ul>
+      <li>
+        <label for="manager">관리담당자</label>
+        <input type="text" id="manager" required>
+      </li>
+      <li>
+        <label for="department">**부서</label>
+        <input type="text" id="department" required>
+      </li>
+      <li>
+        <label for="position">**직위</label>
+        <input type="text" id="position" required>
+      </li>
+      <li>
+        <label for="number2">**연락처</label>
+        <input type="text" id="number2" required>
+      </li>
+    </ul>
+    </div>
+
+  
+</template>
+
+<script>
+
+export default {
+  name: 'App',
+  components: {
+    
+  }
+}
+</script>
+
+<style>
+.manager {
+  width: 600px;
+  margin: 10px auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 10px;
+}
+
+li label {
+  width: 120px;
+  line-height: 36px;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+</style>
